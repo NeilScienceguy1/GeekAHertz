@@ -852,7 +852,6 @@ p {
 footer {
   position: static;
   bottom: 0;
-  z-index: 1 !important;
 }
 .footer-distributed {
   background-color: #292c2f;
