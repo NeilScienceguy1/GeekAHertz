@@ -1005,3 +1005,7 @@ footer {
     margin-left: 0;
   }
 }
+
+.hide {
+  display: none !important;
+}

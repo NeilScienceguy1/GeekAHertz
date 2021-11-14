@@ -87,9 +87,12 @@ $(function() {
 });
 
 const loginLogout = document.getElementById("login-logout");
+const accountLink = document.getElementById("account-link");
 
 loginLogout.innerHTML = "Login";
 loginLogout.href = "./auth.html";
+accountLink.classList.add("hide");
+
 
 if (localStorage.getItem("user")) {
 	loginLogout.innerHTML = "Logout"
@@ -97,5 +100,6 @@ if (localStorage.getItem("user")) {
 		localStorage.removeItem("user");
 		window.location.href = "index.html";
 	})
+	accountLink.classList.remove("hide");
 }
 
